@@ -11,21 +11,21 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = Config.UPDATE_CHANNEL
+        update_channel = Config.UPDATE_CHANNEL
 
     if update_channel:
 
-        try:
+    try:
 
             user = await bot.get_chat_member(update_channel, update.chat.id)
 
             if user.status == "kicked":
 
-               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
+            await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
 
-               return
+            return
 
-        except UserNotParticipant:
+    except UserNotParticipant:
 
             #await update.reply_text(f"Join @{update_channel} To Use Me")
 
@@ -43,7 +43,7 @@ async def start(bot, update):
 
             return
 
-        except Exception:
+    except Exception:
 
             await update.reply_text("Something Wrong. Contact my Support Group")
 
