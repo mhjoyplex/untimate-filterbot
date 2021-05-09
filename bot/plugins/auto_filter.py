@@ -189,8 +189,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>",
-                     f"© DraX Movies", url=http/t.me/draxmoviez",
+                text=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>",                   
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
