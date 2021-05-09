@@ -16,7 +16,7 @@ async def start(bot, update):
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
-            if user.status == "kicked":
+            if user.status == "kicked out":
                await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
                return
         except UserNotParticipant:
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Join Our Channel ⭕️', url="https://t.me/DraXFiles"
                                 )
                         ]
                     ]
