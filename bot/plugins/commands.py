@@ -111,7 +111,7 @@ async def start(bot, update):
         InlineKeyboardButton('♻️ Group', url='https://t.me/DraxmovieZ'),
         InlineKeyboardButton('🎞 Channel', url ='https://t.me/Draxmovies_drax')
     ],[
-        InlineKeyboardButton('Help ', text="നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ help ചോയ്ച്ച് വന്നിരിക്കുന്നു😤...I'm a Unique Bot U Know")
+        InlineKeyboardButton('Help', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
