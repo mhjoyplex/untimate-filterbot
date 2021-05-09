@@ -24,14 +24,8 @@
             "value": ""
         },
         "UPDATE_CHANNEL": {
-     
             "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
-
             "value": ""
-
-            
-
-
         },
         "DB_URI": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
