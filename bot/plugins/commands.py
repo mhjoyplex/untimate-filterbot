@@ -23,7 +23,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="**Join My Updates Channel to use ME 😎 🤭**",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/DraXMovies_Drax")]
               ])
             )
             return
