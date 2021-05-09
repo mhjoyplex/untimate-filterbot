@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="Join Our Movie Channel 🤭     ചാനലിൽ നിങ്ങൾ ഉണ്ട് എങ്കിൽ മാത്രമേ ഈ ബോട്ട് വഴി നിങ്ങൾക്ക് സിനിമ കിട്ടുകയുളളൂ.അതുകൊണ്ട് ചാനെലിൽ ജോയിൻ ആവുക...😁😁",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Click too Join our Channel", url=f"https://t.me/DraXMovies_Drax")]
+                    [ InlineKeyboardButton(text=" ⭕️ Click too Join our Channel ⭕️ ", url=f"https://t.me/DraXMovies_Drax")]
               ])
             )
             return
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Join Our Channel ⭕️', url="https://t.me/DraXFiles"
+                                    '⭕️ Join Our Channel ⭕️', url="https://t.me/DraXFiles"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '⭕️ Join Our Channel ⭕️', url="https://t.me/DraXFiles"
                                 )
                         ]
                     ]
@@ -95,7 +95,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '⭕️ Join Our Channel ⭕️', url="https://t.me/DraXFiles"
                                 )
                         ]
                     ]
@@ -108,12 +108,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('♻️ Group', url='https://t.me/DraxmovieZ'),
+        InlineKeyboardButton('🎞 Channel', url ='https://t.me/Draxmovies_drax')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('Help ', text="നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ help ചോയ്ച്ച് വന്നിരിക്കുന്നു😤...I'm a Unique Bot U Know")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
