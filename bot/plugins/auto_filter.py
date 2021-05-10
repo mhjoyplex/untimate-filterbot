@@ -60,6 +60,11 @@ async def auto_filter(bot, update):
     filters = await db.get_filters(group_id, query)
     
     if filters:
+        results.append(
+                [
+                    InlineKeyboardButton("⚜️ DraX Files ⚜️", url="https://t.me/DraXFiles"),InlineKeyboardButton("⚜️ DraX Series ⚜️", url="https://t.me/DraXSeries")
+                ]
+            )
         for filter in filters: # iterating through each files
             file_name = filter.get("file_name")
             file_type = filter.get("file_type")
@@ -81,7 +86,7 @@ async def auto_filter(bot, update):
             file_size = "" if file_size == ("[0 B]") else file_size
             
             # add emoji down below inside " " if you want..
-            button_text = f"{file_size}{file_name}"
+            button_text = f"{"🎬"+file_size}{file_name}"
             
 
             if file_type == "video":
@@ -156,7 +161,7 @@ async def auto_filter(bot, update):
             InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
         
-        
+        result[0].append([ InlineKeyboardButton(f"💢 Join Our Main channel 💢", url="https://t.me/joinchat/TV_lOjIzLBGmSMGi") ])
         # if show_invite is True Append invite link buttons
         if show_invite:
             
@@ -203,7 +208,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
+                text=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>",                   
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
