@@ -131,7 +131,7 @@ async def auto_filter(bot, update):
             )
         
     else:
-        send_message=await bot.send_photo(
+        Send_message=await bot.send_photo(
         chat_id = update.chat.id,
         photo="https://telegra.ph/DraX-Movies-05-14",
         caption=f"𝗖𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝘁𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 😢ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടത്തി അതുപോലെ ഇവിടെ ടൈപ്പ് ചെയ്യുക....\n\n🥺Google the original name of the movie and type it here ....",             
