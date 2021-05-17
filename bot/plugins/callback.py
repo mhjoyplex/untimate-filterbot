@@ -142,7 +142,8 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>, Requested By <b><code>{update.from_user.first_name}</code></b>,"
+    photo="https://telegra.ph/DraX-Movies-05-14",
+    caption=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>"
              
         
     try:
