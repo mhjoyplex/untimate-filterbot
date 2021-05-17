@@ -131,12 +131,15 @@ async def auto_filter(bot, update):
             )
         
     else:
-        await bot.send_photo(
+        send_message=await bot.send_photo(
         chat_id = update.chat.id,
         photo="https://telegra.ph/DraX-Movies-05-14",
         caption=f"𝗖𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝘁𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 😢ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടത്തി അതുപോലെ ഇവിടെ ടൈപ്പ് ചെയ്യുക....\n\n🥺Google the original name of the movie and type it here ....",             
         reply_to_message_id=update.message_id
            )
+        await asyncio.sleep(15) # in seconds
+        await Send_message.delete()
+        await bot.delete_messages(update.chat.id,update.message_id)
         return # return if no files found for that query
     
 
