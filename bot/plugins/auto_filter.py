@@ -214,7 +214,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            Send_message=await bot.send_message(
+            Send_message=await bot.send_photo(
                 chat_id = update.chat.id,
                 photo="https://telegra.ph/DraX-Movies-05-14",
                 caption=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>",                    
