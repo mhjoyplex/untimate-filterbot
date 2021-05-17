@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>😉 you got </i> <code>{leng}</code> <i>Results For Your Query👉 </i> <code>{query}</code>"
+    text=f"😉 you got {(len_results)} Results For Your Query👉 <code>{query}</code>, Requested By <b><code>{update.from_user.first_name}</code></b>,"
              
         
     try:
